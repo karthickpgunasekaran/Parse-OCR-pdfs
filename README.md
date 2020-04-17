@@ -1,7 +1,7 @@
 # Parse Opticial character recognition based pdfs
 
 This project involves identifying tables in OCR pdfs and extracting them. The documents used in this project are from 1920-1930's and OCR converted data are not quite accurate same words are often recognized with different words.
-So a lot of approximations have been made and manual preparation of data have been carried out. 
+So a lot of approximations have been made and manual preparation of data have been carried out. Also, manual supervision is needed at many instances to very and set the thresholds of approximation.
 Extracting tables and merging them from inaccurate OCR data using Fuzzy String search algorithm to best approximate words.
 
 ### Libraries required:
@@ -48,9 +48,15 @@ Step3_Create_table.ipynb
 to merge all the tables together to create the final output.
 
 
-## Other Files
+## Helper Files
 
-Following code will help in creating 
+Following Ipython notebook will help in getting the distinct words out of all the words,
+
 ```
 Cleanup_votes.ipynb
+```
+Following Ipython notebook will allow to create individual csv files from xlsv worksheets.
+
+```
+SplitExcelWorksheets.ipynb
 ```
